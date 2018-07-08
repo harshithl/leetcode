@@ -48,7 +48,6 @@ public class PlusOne {
 		int[] d = plusOne(new int[] {1});
 		int[] e = plusOne(new int[] {9});
 		int[] f = plusOne(new int[] {2,9});
-		slove(new int[] {6,7});
 		
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
@@ -57,20 +56,6 @@ public class PlusOne {
 		System.out.println(Arrays.toString(e));
 		System.out.println(Arrays.toString(f));
 
-	}
-	public static void slove(int[] digits) {
-	int m=digits.length;
-	if(digits[m-1]!=9) {
-		int c=digits[m-1];
-		digits[m-1]=c+1;
-	}
-	else
-	{
-		digits[m-1]=0;
-		int d=digits[m-2];
-		digits[m-2]=d+1;
-	}
-	System.out.println(Arrays.toString(digits));
 	}
 
 }
